@@ -13,8 +13,10 @@ Here I've built book recommendation system for users based on popularity and use
 # Dataset Information:
 ● Users
 This .csv file contains the users. Note that user IDs (User-ID) have been anonymized and map to integers. Demographic data is provided (Location, Age) if available. Otherwise, these fields contain NULL values.
+
 ● Books
 Books are identified by their respective ISBN. Invalid ISBNs have already been removed from the dataset. Moreover, some content-based information is given (Book-Title, Book-Author, Year-Of-Publication, Publisher), obtained from Amazon Web Services. Note that in the case of several authors, only the first is provided. URLs linking to cover images are also given, appearing in three different flavors (Image-URL-S, Image-URL-M, Image-URL-L), i.e., small, medium, large. These URLs point to the Amazon website.
+
 ● Ratings
 Contains the book rating information. Ratings (Book-Rating) are either explicit, expressed on a scale from 1-10 (higher values denoting higher appreciation), or implicit, expressed by 0.
 
@@ -61,9 +63,13 @@ qi’ and ‘pu’ can be calculated in such a way that the square error differe
 
 ### Benefits of using SVD?
 There are 3 primary benefits :
+
 ● It’s very efficient
+
 ● The basis is hierarchical, ordered by relevance
+
 ● It tends to perform quite well for most data sets
+
 Surprise is a Python scikit for building and analysing recommender systems that deal with explicit
 Rating data. The name SurPRISE (roughly) stands for Simple Python Recommendation System
 Engine.
@@ -75,14 +81,23 @@ On picking a random user_id = 116866 our model recommend this books
 Above recommended books seems pretty much related.
 
 # CHALLENGES
+
 • Understanding the metric for evaluation was a challenge as well.
+
 • Decision making on missing value imputations quite challenging.
+
 • Handling of sparsity was a major challenge.
 
 # CONCLUSION
+
 ● Recommendation system is unturned to exist in the e-commerce businesses with the help of collaborative or content-based filtering to predict different items and yes, users     are most satisfied with the products recommended to them.
+
 ● Books with publication years are somewhat between 1950 - 2005.
+
 ● Also the readers mostly give 8 ratings (on scale 1-10) to books followed by 10 and 7.
+
 ● There are more readers from locations London, England, United Kingdom, Toronto, ontar io, Canada compare to other locations.
+
 ● KNN model gives good recommendation for books.
+
 ● The best collaborative book recommender model is SVD(Singular value decomposition) with best accuracy on test data which give stronger recommendations. These results show that our proposed system can remove boring books from the recommendation list more efficiently.
