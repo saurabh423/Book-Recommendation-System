@@ -20,6 +20,40 @@ Books are identified by their respective ISBN. Invalid ISBNs have already been r
 ● Ratings
 Contains the book rating information. Ratings (Book-Rating) are either explicit, expressed on a scale from 1-10 (higher values denoting higher appreciation), or implicit, expressed by 0.
 
+# Visualisations
+
+### 1) Book Dataset
+
+Let’s lok at the top 10 Book-Author and top 10 Books. Further we find that both the plots are skewed and the maximum number of books are from top 10 Book-Authors and top 10 Books.
+
+![image](https://user-images.githubusercontent.com/60726057/145529612-dc5a4385-1dc1-48b4-a0a6-5b0683e475bc.png)
+
+![image](https://user-images.githubusercontent.com/60726057/145529650-b6244e28-5d59-4d99-8e6e-0fa055e818b6.png)
+
+### 2)User Dataset
+
+Age:
+Let’s understand the Age distribution of the given user dataset. We can conclude between users with age between 20-40 are highest in number.
+
+![image](https://user-images.githubusercontent.com/60726057/145529760-cf88a63d-a51f-4420-9120-602a9d640f7e.png)
+
+Location:
+Here we can observe that user with locations London, England, united kingdom,
+Toronto, Ontario, Canada are high in numbers.
+![image](https://user-images.githubusercontent.com/60726057/145529861-2c3d272c-f522-4621-85e0-213549f733f6.png)
+
+### 3)Rating Dataset
+
+Ratings Distribution:
+Let’s find the distribution of ratings frequency in our ratings dataset. From the following frequency
+plot, we find that most of the ratings are 0 which is implicit rating.
+![image](https://user-images.githubusercontent.com/60726057/145529935-bccd8ad2-0d29-493e-92e4-785c3a0356ba.png)
+
+Since, The ratings are very unevenly distributed, and the vast majority of ratings are 0 .As mentioned in the description of the dataset - BX-Book-Ratings contains the book rating information. Ratings are either explicit, expressed on a scale from 1-10 higher values or implicit, expressed by 0. Hence segregating implicit and explicit ratings dataset.
+![image](https://user-images.githubusercontent.com/60726057/145530012-83bf3bf5-9cf1-4d2d-b7b9-1ccdbec0df02.png)
+
+It can be observed that higher ratings are more common amongst users and rating 8 has been rated the highest number of time.
+
 # Model Creation
 
 ## 1)Popularity Based Approach:
